@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Pricing = () => {
   return (
-    <section className="py-20 md:py-28 animate-in fade-in slide-in-from-bottom-8 duration-1000" style={{ animationDelay: '500ms' }}>
+    <section className="pt-10 md:pt-16 pb-20 md:pb-28 animate-in fade-in slide-in-from-bottom-8 duration-1000" style={{ animationDelay: '500ms' }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
         <Card className="w-full max-w-md text-center shadow-2xl rounded-xl border-2 border-accent transform hover:scale-105 transition-transform duration-300">
           <CardHeader className="p-8">
