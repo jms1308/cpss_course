@@ -65,11 +65,11 @@ const Cta = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <Card className="max-w-2xl mx-auto shadow-xl bg-card">
-          <CardHeader className="text-center">
-            <CardTitle className="text-3xl md:text-4xl font-bold font-headline">
-              Register Now
-            </CardTitle>
-            <CardDescription className="mt-2 text-lg text-muted-foreground">
+          <CardHeader className="text-center items-center">
+            <div className="inline-block bg-accent text-accent-foreground font-bold text-2xl py-3 px-8 -skew-x-12">
+                <h2 className="skew-x-12 tracking-wide">REGISTER NOW</h2>
+            </div>
+            <CardDescription className="pt-2 text-lg text-muted-foreground">
               Leave your details to enroll in the course.
             </CardDescription>
           </CardHeader>

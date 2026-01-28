@@ -58,8 +58,10 @@ const Schedule = () => {
     <section id="schedule" className="py-20 md:py-28 animate-in fade-in slide-in-from-bottom-8 duration-1000" style={{ animationDelay: '700ms' }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">Course Schedule (Weeks 1–2)</h2>
-          <p className="text-lg text-muted-foreground mt-2">A glimpse into your first two weeks of learning.</p>
+            <div className="inline-block bg-accent text-accent-foreground font-bold text-2xl py-3 px-8 -skew-x-12">
+                <h2 className="skew-x-12 tracking-wide">COURSE SCHEDULE</h2>
+            </div>
+          <p className="text-lg text-muted-foreground mt-4">A glimpse into your first two weeks of learning.</p>
         </div>
 
         {/* Mobile View: Cards */}
