@@ -17,6 +17,12 @@
       "description": "Portrait of Muhammad Mishal",
       "imageUrl": "https://images.unsplash.com/photo-1594672830234-ba4cfe1202dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY5NTMwOTgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
+    },
+    {
+      "id": "standard-56",
+      "description": "Placeholder for standard 56",
+      "imageUrl": "https://images.unsplash.com/photo-1759790475932-ac8c04b17727?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhYnN0cmFjdCUyMG51bWJlcnxlbnwwfHx8fDE3Njk2MjY4NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract number"
     }
   ]
 }

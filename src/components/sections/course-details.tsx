@@ -3,7 +3,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CalendarDays, Flag, MonitorPlay, CircleDollarSign } from 'lucide-react';
 
 const CourseDetails = () => {
-  const bookImage = PlaceHolderImages.find(p => p.id === 'book-mockup');
+  const bookImage = PlaceHolderImages.find(p => p.id === 'standard-56');
 
   const details = [
     {

@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const Hero = () => {
-  const bookImage = PlaceHolderImages.find(p => p.id === 'book-mockup');
+  const bookImage = PlaceHolderImages.find(p => p.id === 'standard-56');
 
   return (
     <section className="w-full bg-card overflow-hidden">
