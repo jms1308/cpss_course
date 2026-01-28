@@ -1,12 +1,12 @@
-import { MezonTalimLogo, MezonKengashiLogo, ADIAdvisoryLogo } from '@/components/icons';
+import { Library, Award, Users } from 'lucide-react';
 
 const Header = () => {
   return (
     <header className="bg-background w-full border-b">
-      <div className="container mx-auto flex flex-col md:flex-row h-auto md:h-16 items-center justify-center md:justify-between gap-4 md:gap-0 py-4 md:py-0 px-4 sm:px-6 lg:px-8">
-        <MezonTalimLogo className="h-6 w-auto text-foreground/70" />
-        <MezonKengashiLogo className="h-6 w-auto text-foreground/70" />
-        <ADIAdvisoryLogo className="h-6 w-auto text-foreground/70" />
+      <div className="container mx-auto flex h-16 items-center justify-center gap-12 px-4 sm:px-6 lg:px-8">
+        <Library className="h-8 w-8 text-foreground/70" />
+        <Award className="h-8 w-8 text-foreground/70" />
+        <Users className="h-8 w-8 text-foreground/70" />
       </div>
     </header>
   );
