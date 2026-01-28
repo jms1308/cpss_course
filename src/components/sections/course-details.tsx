@@ -8,42 +8,42 @@ const CourseDetails = () => {
   const details = [
     {
       icon: <CalendarDays className="w-6 h-6 text-accent" />,
-      label: 'Давомийлиги',
-      value: '8 ҳафта (16 та дарс)',
+      label: 'Duration',
+      value: '8 weeks (16 sessions)',
     },
     {
       icon: <MonitorPlay className="w-6 h-6 text-accent" />,
-      label: 'Курс формати',
-      value: 'Инглиз тилида • Жонли онлайн дарслар',
+      label: 'Course Format',
+      value: 'English • Live online classes',
     },
     {
       icon: <Flag className="w-6 h-6 text-accent" />,
-      label: 'Бошланиш санаси',
-      value: '8 февраль',
+      label: 'Start Date',
+      value: 'February 8th',
     },
   ];
 
   const benefits = [
-    'Халқаро ва кўп йиллик тажрибали мутахассис устозлар',
-    'Жонли савол-жавоб сессиялари (онлайн)',
-    'Махсус ўқув материаллари',
+    'International and highly experienced expert instructors',
+    'Live Q&A sessions (online)',
+    'Special training materials',
   ];
 
   return (
-    <section id="course-details" className="py-20 md:py-28 bg-background animate-in fade-in slide-in-from-bottom-8 duration-1000" style={{animationDelay: '400ms'}}>
+    <section id="course-details" className="py-20 md:py-28 bg-card animate-in fade-in slide-in-from-bottom-8 duration-1000" style={{animationDelay: '400ms'}}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-10">
             <div className="inline-block bg-accent text-accent-foreground font-bold text-2xl py-3 px-8 -skew-x-12">
-              <h2 className="skew-x-12 tracking-wide">КУРС КЎЛАМИ ВА БЮДЖЕТИ</h2>
+              <h2 className="skew-x-12 tracking-wide">COURSE SCOPE AND BUDGET</h2>
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold mb-4">Курс кимлар учун?</h3>
+              <h3 className="text-2xl font-bold mb-4">Who is this course for?</h3>
               <ul className="space-y-2 text-muted-foreground list-disc list-inside pl-2">
-                <li>Ислом молияси мутахассислари;</li>
-                <li>Банк ва молия соҳаси ходимлари;</li>
-                <li>Талабалар ва тадқиқотчилар.</li>
+                <li>Islamic finance specialists;</li>
+                <li>Banking and finance employees;</li>
+                <li>Students and researchers.</li>
               </ul>
             </div>
             
@@ -60,7 +60,7 @@ const CourseDetails = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold mb-4">Афзалликлар:</h3>
+              <h3 className="text-2xl font-bold mb-4">Benefits:</h3>
               <ul className="space-y-2 text-muted-foreground list-disc list-inside pl-2">
                 {benefits.map((benefit, i) => <li key={i}>{benefit};</li>)}
               </ul>
@@ -70,12 +70,12 @@ const CourseDetails = () => {
                 <div className="flex items-center gap-4">
                     <div className="flex-shrink-0"><CircleDollarSign className="w-8 h-8 text-accent" /></div>
                     <div className="flex items-center border-2 border-accent rounded-md overflow-hidden">
-                        <span className="font-semibold px-4 py-2 bg-accent text-accent-foreground text-lg">Курс нархи:</span>
+                        <span className="font-semibold px-4 py-2 bg-accent text-accent-foreground text-lg">Course price:</span>
                         <span className="px-4 py-1 text-4xl font-bold">$350</span>
                     </div>
                 </div>
                 <p className="pl-12 text-xs text-muted-foreground">
-                    Shartnoma kunidagi Markaziy Bank kursi boʻyicha
+                    Based on the Central Bank exchange rate on the day of the contract
                 </p>
             </div>
           </div>

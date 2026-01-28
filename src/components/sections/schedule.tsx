@@ -103,7 +103,7 @@ const Schedule = () => {
             <TableHeader>
               <TableRow>
                 <TableHead className="w-[100px]">Class No.</TableHead>
-                <TableHead>Day & Time (UZ)</TableHead>
+                <TableHead>Day & Time</TableHead>
                 <TableHead>Facilitator</TableHead>
                 <TableHead>Shari’ah Standards Coverage</TableHead>
               </TableRow>
