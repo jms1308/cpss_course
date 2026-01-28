@@ -1,10 +1,6 @@
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CalendarDays, Flag, MonitorPlay, CircleDollarSign } from 'lucide-react';
 
 const CourseDetails = () => {
-  const bookImage = PlaceHolderImages.find(p => p.id === 'standard-56');
-
   const details = [
     {
       icon: <CalendarDays className="w-6 h-6 text-accent" />,
@@ -32,7 +28,7 @@ const CourseDetails = () => {
   return (
     <section id="course-details" className="py-20 md:py-28 bg-card animate-in fade-in slide-in-from-bottom-8 duration-1000" style={{animationDelay: '400ms'}}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="max-w-4xl mx-auto">
           <div className="space-y-10">
             <div className="inline-block bg-accent text-accent-foreground font-bold text-2xl py-3 px-8 -skew-x-12">
               <h2 className="skew-x-12 tracking-wide">COURSE SCOPE AND BUDGET</h2>
@@ -78,19 +74,6 @@ const CourseDetails = () => {
                     Based on the Central Bank exchange rate on the day of the contract
                 </p>
             </div>
-          </div>
-          
-          <div className="flex justify-center items-center animate-in fade-in slide-in-from-right-12 duration-1000" style={{animationDelay: '200ms'}}>
-            {bookImage && (
-              <Image
-                src={bookImage.imageUrl}
-                alt={bookImage.description}
-                width={450}
-                height={540}
-                className="rounded-lg shadow-2xl"
-                data-ai-hint={bookImage.imageHint}
-              />
-            )}
           </div>
         </div>
       </div>
