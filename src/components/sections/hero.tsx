@@ -1,11 +1,8 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { MezonKengashiLogo } from '@/components/icons';
 
 const Hero = () => {
-  const bookImage = PlaceHolderImages.find(p => p.id === 'book-mockup');
-
   return (
     <section className="w-full bg-card overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,18 +24,8 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="flex justify-center items-center animate-in fade-in slide-in-from-right-12 duration-1000">
-            {bookImage && (
-              <Image
-                src={bookImage.imageUrl}
-                alt={bookImage.description}
-                width={450}
-                height={540}
-                className="rounded-lg shadow-2xl"
-                data-ai-hint={bookImage.imageHint}
-                priority
-              />
-            )}
+          <div className="flex justify-center items-center animate-in fade-in slide-in-from-right-12 duration-1000 text-foreground">
+            <MezonKengashiLogo className="w-[250px] h-auto" />
           </div>
         </div>
       </div>
