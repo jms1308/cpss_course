@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Users, Clock, BookOpen, CalendarDays } from 'lucide-react';
+import { Users, Clock } from 'lucide-react';
 
 const overviewItems = [
   {
@@ -16,16 +16,6 @@ const overviewItems = [
     title: 'Duration',
     details: ['8 weeks', '16 sessions'],
   },
-  {
-    icon: <BookOpen className="w-8 h-8 text-accent" />,
-    title: 'Course format',
-    details: ['English language', 'Live online classes'],
-  },
-  {
-    icon: <CalendarDays className="w-8 h-8 text-accent" />,
-    title: 'Start date',
-    details: ['8 February'],
-  },
 ];
 
 const Overview = () => {
@@ -36,7 +26,7 @@ const Overview = () => {
           <h2 className="text-3xl md:text-4xl font-bold font-headline">Course Scope and Fees</h2>
           <p className="text-lg text-muted-foreground mt-2">Key details about the CPSS course.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {overviewItems.map((item, index) => (
             <Card key={index} className="text-center transition-transform transform hover:-translate-y-2 duration-300 shadow-lg hover:shadow-xl rounded-lg">
               <CardHeader className="items-center">
