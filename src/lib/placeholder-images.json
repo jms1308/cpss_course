@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "book-mockup",
-      "description": "3D mockup of the book “Shari’ah Standards – AAOIFI”",
-      "imageUrl": "https://images.unsplash.com/photo-1622701360439-efd38a07bda1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxib29rJTIwbW9ja3VwfGVufDB8fHx8MTc2OTU4NDM3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "book mockup"
+      "description": "Image of the book 'Shari'ah Standards' by AAOIFI",
+      "imageUrl": "https://storage.googleapis.com/res-studio-server-data/user_uploads/1769677334_60100705051904_d25f.png",
+      "imageHint": "Shariah Standards book"
     },
     {
       "id": "trainer-yousuf",
