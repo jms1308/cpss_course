@@ -17,10 +17,10 @@ export default function Home() {
         <Overview />
         <Benefits />
         <Pricing />
-        <Trainers />
         <Schedule />
         <Cta />
       </main>
+      <Trainers />
       <Footer />
     </div>
   );
