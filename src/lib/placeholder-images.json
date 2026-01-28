@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "book-mockup",
+      "description": "3D mockup of the book “Shari’ah Standards – AAOIFI”",
+      "imageUrl": "https://images.unsplash.com/photo-1622701360439-efd38a07bda1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxib29rJTIwbW9ja3VwfGVufDB8fHx8MTc2OTU4NDM3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "book mockup"
+    },
+    {
+      "id": "trainer-yousuf",
+      "description": "Portrait of Dr. Mufti Yousuf Sultan",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY5NTA4MDkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male portrait"
+    },
+    {
+      "id": "trainer-mishal",
+      "description": "Portrait of Muhammad Mishal",
+      "imageUrl": "https://images.unsplash.com/photo-1594672830234-ba4cfe1202dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY5NTMwOTgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    }
+  ]
 }
