@@ -9,15 +9,16 @@ const Hero = () => {
   return (
     <section className="w-full bg-card overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-8 items-center py-20 md:py-32">
-          <div className="space-y-6 animate-in fade-in slide-in-from-left-12 duration-1000">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-headline tracking-tight">
-              CPSS Exam Preparation Course
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground">
+        <div className="grid md:grid-cols-2 gap-8 items-center pt-12 pb-20 md:py-28">
+          <div className="space-y-8 animate-in fade-in slide-in-from-left-12 duration-1000 text-center md:text-left">
+            <div className="font-headline font-bold leading-none tracking-tight">
+                <span className="text-7xl md:text-8xl text-accent">CPSS</span>
+                <span className="block text-3xl md:text-4xl mt-2">Exam Preparation Course</span>
+            </div>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto md:mx-0">
               Professional training based on AAOIFI Shari’ah Standards
             </p>
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
                 <Link href="#register">Register Now</Link>
               </Button>
@@ -31,9 +32,9 @@ const Hero = () => {
               <Image
                 src={bookImage.imageUrl}
                 alt={bookImage.description}
-                width={500}
-                height={600}
-                className="rounded-lg shadow-2xl transform transition-transform duration-500 hover:scale-105"
+                width={450}
+                height={540}
+                className="rounded-lg shadow-2xl"
                 data-ai-hint={bookImage.imageHint}
                 priority
               />
