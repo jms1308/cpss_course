@@ -5,7 +5,6 @@ import Trainers from '@/components/sections/trainers';
 import CourseDetails from '@/components/sections/course-details';
 import Schedule from '@/components/sections/schedule';
 import Cta from '@/components/sections/cta';
-import AiSuggester from '@/components/sections/ai-suggester';
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
         <CourseDetails />
         <Schedule />
         <Cta />
-        <AiSuggester />
       </main>
       <Footer />
     </div>
