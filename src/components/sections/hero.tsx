@@ -1,11 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const Hero = () => {
-  const bookImage = PlaceHolderImages.find(p => p.id === 'standard-56');
-
   return (
     <section className="w-full bg-card overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,16 +25,13 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex justify-center items-center animate-in fade-in slide-in-from-right-12 duration-1000 text-foreground">
-            {bookImage && (
-                <Image
-                src={bookImage.imageUrl}
-                alt={bookImage.description}
-                width={450}
-                height={540}
-                className="rounded-lg shadow-2xl"
-                data-ai-hint={bookImage.imageHint}
-                />
-            )}
+            <Image
+                src="https://i.postimg.cc/FHRYwpX6/Screenshot-2026-01-29-at-00-12-59.png"
+                alt="Partner logos"
+                width={600}
+                height={40}
+                className="rounded-lg shadow-2xl object-contain"
+            />
           </div>
         </div>
       </div>
