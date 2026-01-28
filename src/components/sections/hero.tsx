@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -20,8 +21,8 @@ const Hero = () => {
               <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
                 Register Now
               </Button>
-              <Button size="lg" variant="outline">
-                View Course Program
+              <Button size="lg" variant="outline" asChild>
+                <Link href="#schedule">View Course Program</Link>
               </Button>
             </div>
           </div>
