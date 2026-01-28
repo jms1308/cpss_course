@@ -4,33 +4,33 @@
 
 @layer base {
   :root {
-    --background: 212 43% 94%; /* #EBF0F5 */
-    --foreground: 210 65% 16%; /* #0F2A44 */
+    --background: 210 65% 16%; /* #0F2A44 */
+    --foreground: 212 43% 94%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 65% 16%;
+    --card: 210 65% 20%;
+    --card-foreground: 212 43% 94%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 65% 16%;
+    --popover: 210 65% 10%;
+    --popover-foreground: 212 43% 94%;
 
-    --primary: 210 65% 16%; /* #0F2A44 */
-    --primary-foreground: 0 0% 98%;
+    --primary: 212 43% 94%;
+    --primary-foreground: 210 65% 16%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 210 65% 16%;
+    --secondary: 210 65% 25%;
+    --secondary-foreground: 212 43% 94%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 210 40% 45.1%;
+    --muted: 210 65% 25%;
+    --muted-foreground: 210 40% 63.9%;
 
     --accent: 45 91% 57%; /* #F4C430 */
     --accent-foreground: 210 65% 16%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 210 40% 89.8%;
-    --input: 210 40% 89.8%;
-    --ring: 210 65% 16%;
+    --border: 210 65% 25%;
+    --input: 210 65% 25%;
+    --ring: 45 91% 57%;
 
     --radius: 0.5rem;
   }
@@ -72,6 +72,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='2' stroke='hsl(210 65% 16% / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='2' stroke='hsl(212 43% 94% / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
   }
 }
