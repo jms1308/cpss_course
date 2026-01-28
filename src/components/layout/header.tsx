@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="bg-card w-full relative h-14">
       <Image
-        src="https://i.postimg.cc/SxrGfD79/Screenshot-2026-01-29-at-00-10-21.png"
+        src="https://i.postimg.cc/fbM5X1G3/Screenshot-2026-01-29-at-00-49-06.png"
         alt="Shariah Standards Pro Course"
         fill
         className="object-contain"
