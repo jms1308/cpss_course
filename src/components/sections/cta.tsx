@@ -25,13 +25,13 @@ import { Input } from '@/components/ui/input';
 
 const formSchema = z.object({
   name: z.string().min(2, {
-    message: 'Ism kamida 2 belgidan iborat boʻlishi kerak.',
+    message: 'Name must be at least 2 characters.',
   }),
   phone: z.string().min(9, {
-    message: 'Telefon raqami kamida 9 belgidan iborat boʻlishi kerak.',
+    message: 'Phone number must be at least 9 characters.',
   }),
   email: z.string().email({
-    message: 'Yaroqli email manzilini kiriting.',
+    message: 'Please enter a valid email address.',
   }),
 });
 
@@ -51,8 +51,8 @@ const Cta = () => {
   const onSubmit = (values: FormValues) => {
     console.log(values);
     toast({
-      title: "Muvaffaqiyatli roʻyxatdan oʻtdingiz!",
-      description: "Tez orada siz bilan bogʻlanamiz.",
+      title: "Registration Successful!",
+      description: "We will contact you shortly.",
     });
     form.reset();
   };
@@ -60,16 +60,16 @@ const Cta = () => {
   return (
     <section
       className="py-20 md:py-28 animate-in fade-in slide-in-from-bottom-8 duration-1000"
-      style={{ animationDelay: '900ms' }}
+      style={{ animationDelay: '800ms' }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <Card className="max-w-2xl mx-auto shadow-xl bg-card">
           <CardHeader className="text-center">
             <CardTitle className="text-3xl md:text-4xl font-bold font-headline">
-              Ro'yxatdan o'tish
+              Register Now
             </CardTitle>
             <CardDescription className="mt-2 text-lg text-muted-foreground">
-              Kursga yozilish uchun maʼlumotlaringizni qoldiring.
+              Leave your details to enroll in the course.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -80,9 +80,9 @@ const Cta = () => {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Ism</FormLabel>
+                      <FormLabel>Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="Ismingizni kiriting" {...field} />
+                        <Input placeholder="Enter your name" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -93,9 +93,9 @@ const Cta = () => {
                   name="phone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Telefon raqam</FormLabel>
+                      <FormLabel>Phone Number</FormLabel>
                       <FormControl>
-                        <Input placeholder="+998 XX XXX XX XX" {...field} />
+                        <Input placeholder="Your phone number" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -115,7 +115,7 @@ const Cta = () => {
                   )}
                 />
                 <Button type="submit" size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-                  Yuborish
+                  Submit
                 </Button>
               </form>
             </Form>
