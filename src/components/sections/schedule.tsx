@@ -7,6 +7,7 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const scheduleData = [
   {
@@ -60,7 +61,44 @@ const Schedule = () => {
           <h2 className="text-3xl md:text-4xl font-bold font-headline">Course Schedule (Weeks 1–2)</h2>
           <p className="text-lg text-muted-foreground mt-2">A glimpse into your first two weeks of learning.</p>
         </div>
-        <div className="rounded-lg border shadow-lg overflow-hidden bg-card">
+
+        {/* Mobile View: Cards */}
+        <div className="space-y-4 md:hidden">
+          {scheduleData.map((item) => (
+            <Card key={item.classNo} className="shadow-lg">
+              <CardHeader>
+                <div className="flex justify-between items-start">
+                  <CardTitle className="text-xl">Class {item.classNo}</CardTitle>
+                  <div className="text-right text-sm">
+                    <p className="font-semibold">{item.day}</p>
+                    <p className="text-muted-foreground">{item.time}</p>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-sm mb-2 text-muted-foreground">Facilitator</h4>
+                  <Badge variant={item.facilitator.includes("Yousuf") ? "default" : "secondary"}>
+                    {item.facilitator}
+                  </Badge>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-sm mb-2 text-muted-foreground">Shari’ah Standards Coverage</h4>
+                  {item.topics.length > 0 ? (
+                    <ul className="list-disc list-inside space-y-1 text-muted-foreground pl-4">
+                      {item.topics.map((topic, i) => <li key={i}>{topic}</li>)}
+                    </ul>
+                  ) : (
+                    <span className="text-muted-foreground italic">Topics to be confirmed</span>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* Desktop View: Table */}
+        <div className="hidden md:block rounded-lg border shadow-lg overflow-hidden bg-card">
           <Table>
             <TableHeader>
               <TableRow>
