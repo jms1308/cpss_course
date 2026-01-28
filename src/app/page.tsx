@@ -6,7 +6,6 @@ import Benefits from '@/components/sections/benefits';
 import Pricing from '@/components/sections/pricing';
 import Trainers from '@/components/sections/trainers';
 import Schedule from '@/components/sections/schedule';
-import AiSuggester from '@/components/sections/ai-suggester';
 import Cta from '@/components/sections/cta';
 
 export default function Home() {
@@ -20,7 +19,6 @@ export default function Home() {
         <Pricing />
         <Trainers />
         <Schedule />
-        <AiSuggester />
         <Cta />
       </main>
       <Footer />
