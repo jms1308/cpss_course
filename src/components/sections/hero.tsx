@@ -18,8 +18,8 @@ const Hero = () => {
               Professional training based on AAOIFI Shari’ah Standards
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                Register Now
+              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
+                <Link href="#register">Register Now</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <Link href="#schedule">View Course Program</Link>

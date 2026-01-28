@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const Pricing = () => {
   return (
@@ -11,8 +12,8 @@ const Pricing = () => {
           </CardHeader>
           <CardContent className="space-y-6 px-8 pb-8">
             <p className="text-6xl font-bold font-headline">$350</p>
-            <Button size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg py-6">
-              Enroll Now
+            <Button size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg py-6" asChild>
+              <Link href="#register">Enroll Now</Link>
             </Button>
             <CardDescription className="text-xs">
               Fee based on Central Bank exchange rate on payment date

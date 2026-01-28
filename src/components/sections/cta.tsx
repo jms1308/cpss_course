@@ -59,6 +59,7 @@ const Cta = () => {
 
   return (
     <section
+      id="register"
       className="py-20 md:py-28 animate-in fade-in slide-in-from-bottom-8 duration-1000"
       style={{ animationDelay: '800ms' }}
     >
