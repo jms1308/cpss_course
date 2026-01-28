@@ -20,7 +20,7 @@ const overviewItems = [
 
 const Overview = () => {
   return (
-    <section className="py-20 md:py-28 animate-in fade-in slide-in-from-bottom-8 duration-1000" style={{ animationDelay: '200ms' }}>
+    <section className="py-20 md:py-28 bg-card animate-in fade-in slide-in-from-bottom-8 duration-1000" style={{ animationDelay: '200ms' }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">Course Scope and Fees</h2>
