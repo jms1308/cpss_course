@@ -5,7 +5,7 @@ const Header = () => {
     <header className="bg-card w-full py-6">
       <div className="container mx-auto flex justify-center items-center">
         <Image
-          src="https://i.postimg.cc/SxrGfD79/Screenshot-2026-01-29-at-00-10-21.png"
+          src="https://i.postimg.cc/FHRYwpX6/Screenshot-2026-01-29-at-00-12-59.png"
           alt="Partner logos"
           width={600}
           height={40}
