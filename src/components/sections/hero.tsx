@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="w-full bg-card overflow-hidden pt-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 items-center pb-20 md:pb-28">
-          <div className="space-y-8 animate-in fade-in slide-in-from-left-12 duration-1000 flex flex-col items-center md:items-start md:justify-center">
+          <div className="space-y-8 animate-in fade-in slide-in-from-left-12 duration-1000 flex flex-col items-center md:items-start">
             <div className="font-headline font-bold leading-none tracking-tight text-center md:text-left">
                 <span className="text-7xl md:text-8xl text-accent">CPSS</span>
                 <span className="block text-3xl md:text-4xl mt-2">Exam Preparation Course</span>
@@ -30,7 +30,7 @@ const Hero = () => {
                 alt="Partner logos"
                 width={600}
                 height={40}
-                className="rounded-lg shadow-2xl object-contain max-w-[300px] md:max-w-md lg:max-w-lg"
+                className="rounded-lg shadow-2xl object-contain max-w-[300px] md:max-w-sm lg:max-w-md"
             />
           </div>
         </div>
