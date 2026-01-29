@@ -4,10 +4,10 @@ import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <section className="w-full bg-card overflow-hidden pt-16">
+    <section className="w-full bg-card overflow-hidden pt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 items-center pb-20 md:pb-28">
-          <div className="space-y-8 animate-in fade-in slide-in-from-left-12 duration-1000 flex flex-col items-center md:items-start">
+          <div className="flex flex-col justify-center items-center md:items-start space-y-8 animate-in fade-in slide-in-from-left-12 duration-1000">
             <div className="font-headline font-bold leading-none tracking-tight text-center md:text-left">
                 <span className="text-7xl md:text-8xl text-accent">CPSS</span>
                 <span className="block text-3xl md:text-4xl mt-2">Exam Preparation Course</span>
