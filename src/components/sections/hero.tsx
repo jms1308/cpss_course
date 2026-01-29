@@ -4,10 +4,10 @@ import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <section className="w-full bg-card overflow-hidden pt-20">
+    <section className="w-full bg-card overflow-hidden pt-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 items-center pb-20 md:pb-28">
-          <div className="flex flex-col justify-center items-center md:items-start space-y-8 animate-in fade-in slide-in-from-left-12 duration-1000">
+          <div className="flex flex-col justify-center md:justify-start items-center md:items-start space-y-8 animate-in fade-in slide-in-from-left-12 duration-1000">
             <div className="font-headline font-bold leading-none tracking-tight text-center md:text-left">
                 <span className="text-7xl md:text-8xl text-accent">CPSS</span>
                 <span className="block text-3xl md:text-4xl mt-2">Exam Preparation Course</span>
@@ -30,7 +30,7 @@ const Hero = () => {
                 alt="Partner logos"
                 width={600}
                 height={40}
-                className="rounded-lg shadow-2xl object-contain max-w-[300px] md:max-w-sm lg:max-w-md"
+                className="rounded-lg shadow-2xl object-contain max-w-[300px] md:max-w-md"
             />
           </div>
         </div>
