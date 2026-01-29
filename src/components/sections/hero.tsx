@@ -28,9 +28,9 @@ const Hero = () => {
             <Image
                 src="https://i.postimg.cc/FHRYwpX6/Screenshot-2026-01-29-at-00-12-59.png"
                 alt="Partner logos"
-                width={600}
+                width={450}
                 height={40}
-                className="rounded-lg shadow-2xl object-contain max-w-[300px] md:max-w-[450px] lg:max-w-[450px]"
+                className="rounded-lg shadow-2xl object-contain max-w-[300px] lg:max-w-[400px]"
             />
           </div>
         </div>
