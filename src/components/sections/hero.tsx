@@ -6,16 +6,16 @@ const Hero = () => {
   return (
     <section className="w-full bg-card overflow-hidden pt-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-8 items-center pb-20 md:pb-28">
-          <div className="flex flex-col justify-center items-center md:items-start md:pl-16 space-y-8 animate-in fade-in slide-in-from-left-12 duration-1000">
-            <div className="font-headline font-bold leading-none tracking-tight text-center md:text-left">
+        <div className="grid lg:grid-cols-2 gap-8 items-center pb-20 lg:pb-28">
+          <div className="flex flex-col justify-center items-center lg:items-start lg:pl-16 space-y-8 animate-in fade-in slide-in-from-left-12 duration-1000">
+            <div className="font-headline font-bold leading-none tracking-tight text-center lg:text-left">
                 <span className="text-7xl md:text-8xl text-accent">CPSS</span>
                 <span className="block text-3xl md:text-4xl mt-2">Exam Preparation Course</span>
             </div>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto md:mx-0 text-center md:text-left">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto lg:mx-0 text-center lg:text-left">
               Professional course based on AAOIFI Shari’ah Standards
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
                 <Link href="#register">Register Now</Link>
               </Button>
