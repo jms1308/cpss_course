@@ -48,9 +48,9 @@ const Trainers = () => {
                      <Image
                       src={trainerImage.imageUrl}
                       alt={trainerImage.description}
-                      width={100}
-                      height={100}
-                      className="rounded-full border-4 border-accent"
+                      width={120}
+                      height={80}
+                      className="object-contain"
                       data-ai-hint={trainerImage.imageHint}
                     />
                   )}
