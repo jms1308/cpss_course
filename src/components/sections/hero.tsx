@@ -15,7 +15,7 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto lg:mx-0 text-center lg:text-left">
               Professional course based on AAOIFI Shari’ah Standards
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
                 <Link href="#register">Register Now</Link>
               </Button>
@@ -30,7 +30,7 @@ const Hero = () => {
                 alt="Partner logos"
                 width={450}
                 height={40}
-                className="rounded-lg shadow-2xl object-contain max-w-[300px] lg:max-w-[400px]"
+                className="rounded-lg shadow-2xl object-contain max-w-[240px] lg:max-w-[400px]"
             />
           </div>
         </div>
