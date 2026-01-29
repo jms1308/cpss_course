@@ -15,11 +15,11 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto lg:mx-0">
               Professional course based on AAOIFI Shari’ah Standards
             </p>
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
+            <div className="flex gap-4 justify-center lg:justify-start">
+              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 px-4 text-xs sm:px-8 sm:text-sm" asChild>
                 <Link href="#register">Register Now</Link>
               </Button>
-              <Button size="lg" variant="outline" asChild>
+              <Button size="lg" variant="outline" className="px-4 text-xs sm:px-8 sm:text-sm" asChild>
                 <Link href="#schedule">View Course Program</Link>
               </Button>
             </div>
