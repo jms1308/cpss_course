@@ -35,7 +35,7 @@ const Hero = () => {
                 alt="Partner logos"
                 width={350}
                 height={40}
-                className="rounded-lg shadow-2xl object-contain max-w-[200px] sm:max-w-[240px] lg:max-w-[300px]"
+                className="rounded-lg shadow-2xl object-contain max-w-[200px] sm:max-w-[300px] lg:max-w-[400px]"
             />
           </div>
         </div>
