@@ -32,7 +32,7 @@ const scheduleData = [
     day: "Friday, 13 Feb",
     time: "7:00–9:00",
     facilitator: "Muhammad Mishal",
-    topics: [],
+    topics: ["SS 03 Procrastinating Debtor", "SS 01 Trading in Currencies"],
   },
   {
     classNo: 3,
@@ -40,8 +40,6 @@ const scheduleData = [
     time: "9:00–11:00",
     facilitator: "Dr. Mufti Yousuf Sultan",
     topics: [
-      "SS 03 Procrastinating Debtor",
-      "SS 01 Trading in Currencies",
       "SS 57 Gold and Its Trading Parameters",
       "SS 19 Loan (Qard)",
     ],
