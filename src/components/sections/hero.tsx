@@ -7,15 +7,15 @@ const Hero = () => {
     <section className="w-full bg-card overflow-hidden pt-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 items-center pb-20 lg:pb-28">
-          <div className="flex flex-col justify-center items-center lg:items-start lg:pl-16 space-y-8 animate-in fade-in slide-in-from-left-12 duration-1000">
-            <div className="font-headline font-bold leading-none tracking-tight text-center lg:text-left">
+          <div className="flex flex-col justify-center items-center lg:items-start lg:pl-16 space-y-8 animate-in fade-in slide-in-from-left-12 duration-1000 text-center lg:text-left">
+            <div className="font-headline font-bold leading-none tracking-tight">
                 <span className="text-7xl md:text-8xl text-accent">CPSS</span>
                 <span className="block text-3xl md:text-4xl mt-2">Exam Preparation Course</span>
             </div>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto lg:mx-0 text-center lg:text-left">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto lg:mx-0">
               Professional course based on AAOIFI Shari’ah Standards
             </p>
-            <div className="flex flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
                 <Link href="#register">Register Now</Link>
               </Button>
@@ -30,7 +30,7 @@ const Hero = () => {
                 alt="Partner logos"
                 width={450}
                 height={40}
-                className="rounded-lg shadow-2xl object-contain max-w-[240px] lg:max-w-[400px]"
+                className="rounded-lg shadow-2xl object-contain max-w-[200px] sm:max-w-[240px] lg:max-w-[350px]"
             />
           </div>
         </div>
