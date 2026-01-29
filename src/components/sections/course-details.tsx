@@ -20,8 +20,8 @@ const CourseDetails = () => {
   ];
 
   const benefits = [
-    'International and highly experienced experts',
-    'Live Q&A sessions (online)',
+    'International and highly experienced trainers',
+    'Live classes and Q&A sessions (online)',
     'Special course materials',
   ];
 
