@@ -7,8 +7,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start text-center md:text-left">
           <div className="flex flex-col items-center md:items-start">
             <h3 className="font-bold text-lg">Contact Us</h3>
-            <p className="text-muted-foreground mt-2">info@cpss-training.com</p>
-            <p className="text-muted-foreground">+1 234 567 890</p>
+            <p className="text-muted-foreground mt-2">mezontalim@gmail.com</p>
+            <p className="text-muted-foreground">+998901097799</p>
           </div>
           <div className="text-center md:text-right text-muted-foreground">
             <p>A professional course program for Islamic finance experts.</p>
