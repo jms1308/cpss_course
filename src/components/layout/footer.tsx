@@ -11,12 +11,12 @@ const Footer = () => {
             <p className="text-muted-foreground">+1 234 567 890</p>
           </div>
           <div className="text-center md:text-right text-muted-foreground">
-            <p>A professional training program for Islamic finance experts.</p>
+            <p>A professional course program for Islamic finance experts.</p>
           </div>
         </div>
         <Separator className="my-8" />
         <div className="text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} CPSS Training Program. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} CPSS Course Program. All rights reserved.</p>
         </div>
       </div>
     </footer>

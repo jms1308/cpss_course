@@ -16,10 +16,10 @@ export const MezonKengashiLogo = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const ADIAdvisoryLogo = (props: SVGProps<SVGSVGElement>) => (
+export const ADLAdvisoryLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg width="160" height="40" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
     <path d="M5 20C5 11.7157 11.7157 5 20 5C28.2843 5 35 11.7157 35 20C35 28.2843 28.2843 35 20 35C11.7157 35 5 28.2843 5 20Z" stroke="currentColor" strokeWidth="2"/>
     <path d="M15 15L25 25M25 15L15 25" stroke="currentColor" strokeWidth="2"/>
-    <text x="45" y="27" fontFamily="PT Sans, sans-serif" fontSize="20" fill="currentColor">ADI Advisory</text>
+    <text x="45" y="27" fontFamily="PT Sans, sans-serif" fontSize="20" fill="currentColor">ADL Advisory</text>
   </svg>
 );

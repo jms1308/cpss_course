@@ -23,7 +23,7 @@ const trainersData = [
       'Shari’ah advisor registered in Malaysia',
       'Holds degrees from IIUM and INCEIF',
       'Experience across Malaysia, Middle East, Africa, Europe, USA',
-      'Partner and Director at ADI Advisory',
+      'Partner and Director at ADL Advisory',
     ],
   },
 ];
@@ -34,9 +34,9 @@ const Trainers = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
             <div className="inline-block bg-accent text-accent-foreground font-bold text-2xl py-3 px-8 -skew-x-12">
-                <h2 className="skew-x-12 tracking-wide">EXPERT TRAINERS</h2>
+                <h2 className="skew-x-12 tracking-wide">EXPERTS</h2>
             </div>
-          <p className="text-lg text-muted-foreground mt-4">Learn from the best in the industry.</p>
+          <p className="text-lg text-muted-foreground mt-4">Learn from the experienced in the industry.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {trainersData.map((trainer) => {
