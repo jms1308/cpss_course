@@ -16,7 +16,7 @@ const Hero = () => {
               Professional course based on AAOIFI Shari’ah Standards
             </p>
             <div className="flex gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 px-4 text-xs sm:px-8 sm:text-sm" asChild>
+              <Button size="lg" className="border border-transparent bg-accent text-accent-foreground hover:bg-accent/90 px-4 text-xs sm:px-8 sm:text-sm" asChild>
                 <Link href="#register">Register Now</Link>
               </Button>
               <Button size="lg" variant="outline" className="px-4 text-xs sm:px-8 sm:text-sm" asChild>
@@ -28,9 +28,9 @@ const Hero = () => {
             <Image
                 src="https://i.postimg.cc/FHRYwpX6/Screenshot-2026-01-29-at-00-12-59.png"
                 alt="Partner logos"
-                width={450}
+                width={350}
                 height={40}
-                className="rounded-lg shadow-2xl object-contain max-w-[200px] sm:max-w-[240px] lg:max-w-[350px]"
+                className="rounded-lg shadow-2xl object-contain max-w-[200px] sm:max-w-[240px]"
             />
           </div>
         </div>
