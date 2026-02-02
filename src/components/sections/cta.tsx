@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -38,6 +39,7 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>;
 
 const Cta = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -48,13 +50,44 @@ const Cta = () => {
     },
   });
 
-  const onSubmit = (values: FormValues) => {
-    console.log(values);
-    toast({
-      title: "Registration Successful!",
-      description: "We will contact you shortly.",
-    });
-    form.reset();
+  const onSubmit = async (values: FormValues) => {
+    setIsSubmitting(true);
+    try {
+      const response = await fetch('https://cpss.onrender.com/webhook-test/79446d2c-b088-4c5a-9189-038b04962778', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            name: values.name,
+            number: values.phone,
+            email: values.email,
+        }),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Registration Successful!",
+          description: "We will contact you shortly.",
+        });
+        form.reset();
+      } else {
+        toast({
+          variant: "destructive",
+          title: "Registration failed.",
+          description: "Could not submit your registration. Please try again.",
+        });
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+      toast({
+        variant: "destructive",
+        title: "Uh oh! Something went wrong.",
+        description: "There was a problem with your request.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -115,8 +148,8 @@ const Cta = () => {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-                  Submit
+                <Button type="submit" size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90" disabled={isSubmitting}>
+                  {isSubmitting ? 'Submitting...' : 'Submit'}
                 </Button>
               </form>
             </Form>
