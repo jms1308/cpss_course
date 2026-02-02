@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useToast } from "@/hooks/use-toast";
+import { registerUser } from '@/app/actions';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -53,19 +54,9 @@ const Cta = () => {
   const onSubmit = async (values: FormValues) => {
     setIsSubmitting(true);
     try {
-      const response = await fetch('https://cpss.onrender.com/webhook-test/79446d2c-b088-4c5a-9189-038b04962778', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            name: values.name,
-            number: values.phone,
-            email: values.email,
-        }),
-      });
+      const result = await registerUser(values);
 
-      if (response.ok) {
+      if (result.success) {
         toast({
           title: "Registration Successful!",
           description: "We will contact you shortly.",
@@ -75,7 +66,7 @@ const Cta = () => {
         toast({
           variant: "destructive",
           title: "Registration failed.",
-          description: "Could not submit your registration. Please try again.",
+          description: result.message || "Could not submit your registration. Please try again.",
         });
       }
     } catch (error) {
