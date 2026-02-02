@@ -14,7 +14,7 @@ export default function Home() {
     const sendVisitInfo = async () => {
       try {
         await fetch(
-          'https://cpss.onrender.com/webhook-test/79446d2c-b088-4c5a-9189-038b04962778',
+          'https://cpss.onrender.com/webhook/79446d2c-b088-4c5a-9189-038b04962778',
           {
             method: 'POST',
             headers: {
